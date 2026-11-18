@@ -1,17 +1,27 @@
-# Winter Dream — Live Wallpaper (boshlang‘ich loyiha)
+# Winter Dream — Android Live Wallpaper
 
-Bu Android Live Wallpaper uchun boshlang‘ich Kotlin loyihasi.
+Bu loyiha Android telefon uchun haqiqiy Live Wallpaper ilovasi.
 
-## Hozirgi prototip
-- Qishki fon rasmi va animatsiyali qor.
-- Barmoq tekkanda qor zarralari paydo bo‘ladi.
-- Barmoqni surish yaqin qor zarralarini itaradi.
-- Tegilgan joyda vaqtinchalik qor sharchasi paydo bo‘ladi.
+## Hozirgi versiya
+- Qishki tungi manzara ilova ichida Canvas orqali chiziladi; tashqi rasm fayliga bog‘liq emas.
+- Ekranda doimiy qor yog‘adi.
+- Ekranga tegilganda yaqin qor parchalari chetga suriladi va yengil yorug‘lik effekti paydo bo‘ladi.
+- Kotlin ishlatilmaydi: loyiha Java 17 bilan tuzilgan.
+- APK GitHub Actions orqali yig‘iladi.
 
-## APK yig‘ish
-Loyihani GitHub'ga yuklab, Actions bo‘limidan `Build Winter Dream APK` workflow'ini ishga tushiring. Tayyor APK `WinterDream-debug-apk` nomli artifact sifatida chiqadi.
+## GitHub Actions
+Har bir `main` branch pushidan so‘ng yoki Actions ichidagi `Run workflow` orqali APK yig‘iladi.
+Muvaffaqiyatli yig‘ilgach, `WinterDream-debug-apk` artifactini yuklab olish mumkin.
 
-APK'ni telefonga o‘rnatgach:
-Sozlamalar → Fon rasmi va uslub → Fon rasmlarini o‘zgartirish → Live wallpapers → Winter Dream.
+APK yo‘li:
+`app/build/outputs/apk/debug/app-debug.apk`
 
-Eslatma: ayrim launcherlar asosiy ekranda surish harakatlarini o‘zlari ishlatishi mumkin. Bunday holatda qor bilan o‘zaro ta’sir bo‘sh joylarda yoki launcher ruxsat bergan tegishlarda ishlaydi.
+## Telefonga o‘rnatish
+1. APK faylini telefonga yuklab oling.
+2. Android so‘raganda ushbu APK uchun o‘rnatishga ruxsat bering.
+3. Ilovani o‘rnating.
+4. Telefonning Wallpaper / Fon rasmi bo‘limidan Live Wallpapers ichidan Winter Dream ni tanlang.
+5. Home screen yoki Home and lock screens ni tanlang.
+
+## Muhim
+Bu boshlang‘ich, ishlaydigan Live Wallpaper prototipi. Hozircha qor odam yasash, qor to‘pi uloqtirish, shamol sozlamalari va chuqur parallax kiritilmagan. Ular keyingi bosqichlarda qo‘shilishi mumkin.
